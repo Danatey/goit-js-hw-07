@@ -2,8 +2,7 @@ const searchCategories = document.querySelector('ul#categories');
 const quantityElements = searchCategories.children.length;
 console.log(`В списке ${quantityElements} категории.`);
 
-const arrayCategories = [...searchCategories.children];
-arrayCategories.forEach(item => {
+searchCategories.children.forEach(item => {
     const searchTitle = item.querySelector('h2');
     const textElement = searchTitle.textContent;
     console.log(`Категория: ${textElement}`);

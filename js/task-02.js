@@ -7,7 +7,6 @@ const ingredients = [
   'Приправы',
 ];
 const searchUl =document.querySelector('#ingredients');
-console.log(searchUl);
 const methodIngredients = ingredients.map(ingredient => {
     const ingredientElement = document.createElement('li');
     ingredientElement.textContent = ingredient;

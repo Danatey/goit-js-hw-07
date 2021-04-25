@@ -5,14 +5,14 @@ const incrementButton = conteinerElement[1];;
 let counterValue = Number(resultElement.textContent);
 
 
-const decrement = (() =>  {
-     counterValue = counterValue - 1;
+const decrement = (() => {
+    counterValue = counterValue - 1;
     return resultElement.textContent = `${counterValue}`;
-})
-const increment = (() =>  {
+});
+const increment = (() => {
     counterValue = counterValue + 1;
     return resultElement.textContent = `${counterValue}`;
-})
+});
 
 decrementButton.addEventListener("click", decrement);
 incrementButton.addEventListener("click", increment);

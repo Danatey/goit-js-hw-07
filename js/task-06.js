@@ -9,8 +9,6 @@ const inputValidation = ((event) => {
         event.currentTarget.classList.add('invalid')
         event.currentTarget.classList.remove('valid')
     }
-    // console.log(event.currentTarget.value.length);
-    // console.log(Number(inputElement.dataset.length));
 })
     
 inputElement.addEventListener('input', inputValidation);
